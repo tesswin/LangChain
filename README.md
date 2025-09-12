@@ -41,3 +41,17 @@ LangChain Features:
 
 
 
+------------ Project Requirements -----------
+
+1. Bootrapping the project using uv 
+2. pip install uv (if uv is not installed in the system)
+3. uv init 
+    - This will create venv named langchain_pjt (this is the name of the folder)
+4. uv add langchain
+    - This will install all the packages and dependecies of langchain
+5. uv add langchain-openai
+    - Every provider of LLM has their own packages, which are maintained by the provider itself. 
+6. uv add python-dotenv
+    - This helps add environment variables from .env file. To save api keys. 
+7. uv add black isort 
+    - For formatting the code
