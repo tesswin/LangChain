@@ -1,5 +1,4 @@
 ### DEVEOPING AI AGENT WITH LANGCHAIN & LANGGRAPH - A TUTORIAL 
-### DEVEOPING AI AGENT WITH LANGCHAIN & LANGGRAPH - A TUTORIAL 
 - An elaborate coverage of AI Agent and RAG 
 - LangChain Ecosystem: LangSmith and LangGraph 
 - Prompt Engineering and Production 
@@ -40,6 +39,5 @@ LangChain Features:
     pdf_loader = PyPDFLoader("filename.pdf")
     pdf_docs = pdf_loader.load()
 
-    
 
 
