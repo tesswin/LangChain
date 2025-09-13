@@ -39,7 +39,47 @@ LangChain Features:
     pdf_loader = PyPDFLoader("filename.pdf")<br>
     pdf_docs = pdf_loader.load()
 
+#### LangChain - Prompt Templates 
 
+A wrapper class around prompts. 
+
+#### LangChain - ChatModels 
+
+To talk to LLM. 
+
+Historically, it was string input to LLM and a string output. However, currently it has evolved into coversational. 
+
+Importing a ChatModel. Eg: <br>
+from langchain_openai import ChatOpenAI
+
+
+#### LangChain - Chain/ LCEL 
+
+LCEL - LangChain Expression Language 
+
+Output of one step become input of the next. Usage example using the LCEL syntax: <br>
+
+chain = summary_prompt_template | llm
+
+where <br>
+A chain is created by using pipe operator - this is the LCEL syntax<br>
+llm is the ChatModel object (Eg: llm = ChatOpenAI(temperature=0, model= "gpt-5")) <br>
+summary_prompt_template is prompt template object
+
+The chain resulting from this is called a Runnable Object! 
+
+#### LCEL - Runnable Object 
+
+A runnable object can be invoked to get a response. 
+
+#### Different ChatModels 
+
+Any chatmodels can be used in langchain. Examples include: 
+
+1. Proprietary models like chatGPT 
+2. Opensource models using Ollama 
+
+### AI Agents  
 
 ------------ Project Requirements -----------
 
@@ -59,3 +99,10 @@ UV:
 
 gitignore: 
 Those information that I don't want to commit 
+
+Ollama: 
+
+- Download Ollama - https://ollama.com/download/windows
+- Install it 
+- ollama --help 
+- ollama pull gemma3:270m
