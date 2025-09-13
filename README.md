@@ -43,6 +43,7 @@ LangChain Features:
 
 ------------ Project Requirements -----------
 
+UV: 
 1. Bootrapping the project using uv 
 2. pip install uv (if uv is not installed in the system)
 3. uv init 
@@ -55,3 +56,6 @@ LangChain Features:
     - This helps add environment variables from .env file. To save api keys. 
 7. uv add black isort 
     - For formatting the code
+
+gitignore: 
+Those information that I don't want to commit 
