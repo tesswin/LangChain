@@ -81,6 +81,18 @@ Any chatmodels can be used in langchain. Examples include:
 
 ### AI Agents  
 
+Chains: start --> step1 --> step2 --> end 
+Agent: start --> step1 --> LLM --> action 
+
+LLM as a reasoning brain. 
+
+#### ReAct Agent: 
+Specific type of agent architecture 
+Query --> LLM (Thinking) --> Action (using Tools) --> LLM (Do the action) 
+
+
+
+
 ------------ Project Requirements -----------
 
 UV: 
